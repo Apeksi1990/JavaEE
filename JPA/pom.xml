@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Validation</artifactId>
+    <artifactId>JPA</artifactId>
 
     <build>
         <plugins>
@@ -36,6 +36,22 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.2.1</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <mainClass>ru.asemenov.Main</mainClass>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
+
 </project>
