@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Entity</artifactId>
+    <artifactId>Callback_and_Timer</artifactId>
     <build>
         <plugins>
             <plugin>

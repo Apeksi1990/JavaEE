@@ -5,7 +5,6 @@ import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
-import javax.validation.constraints.NotNull;
 import java.util.List;
 
 import static ru.asemenov.Book.FIND_ALL;
@@ -22,16 +21,16 @@ public class BookEJB implements BookEJBRemote {
 	return query.getResultList();
     }
 
-    public @NotNull Book createBook(Book book) {
+    public Book createBook(Book book) {
         em.persist(book);
-	return book;
+        return book;
     }
 
-    public void deleteBook(@NotNull Book book) {
+    public void deleteBook(Book book) {
         em.remove(em.merge(book));
     }
 
-    public @NotNull Book updateBook(@NotNull Book book) {
+    public Book updateBook(Book book) {
 	return em.merge(book);
     }
 }
