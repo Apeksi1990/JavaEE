@@ -14,7 +14,7 @@ public class Main {
         props.put(Context.INITIAL_CONTEXT_FACTORY, "com.sun.enterprise.naming.SerialInitContextFactory");
         /*props.setProperty("org.omg.CORBA.ORBInitialHost", "localhost");
         props.setProperty("org.omg.CORBA.ORBInitialPort", "3700");*/
-        Context ctx = new InitialContext(props);
+        Context ctx = new InitialContext();
         BookEJBRemote bookEJB = (BookEJBRemote) ctx.lookup("java:global/Callback_and_Timer-1.0-SNAPSHOT/BookEJB!ru.asemenov.BookEJBRemote");
 
         // Gets and displays all the books from the database

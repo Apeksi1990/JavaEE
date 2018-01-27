@@ -2,10 +2,12 @@ package ru.asemenov;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
+import javax.ejb.Startup;
 import javax.inject.Inject;
+import javax.inject.Singleton;
 
-//@Singleton
-//@Startup
+@Singleton
+@Startup
 /*@DataSourceDefinition(
 		className = "org.postgresql.Driver",
 		name = "jdbc/chapter08DS",
@@ -13,7 +15,6 @@ import javax.inject.Inject;
 		password = "postgres",
         portNumber=5432,
 		databaseName = "Books",
-		properties = {"connectionAttributes ="}
 )*/
 public class DatabasePopulator {
     @Inject

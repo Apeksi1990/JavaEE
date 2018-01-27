@@ -76,7 +76,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Glassfish-embedded-all -->
+        <!--&lt;!&ndash; Glassfish-embedded-all &ndash;&gt;
         <dependency>
             <groupId>org.glassfish.main.extras</groupId>
             <artifactId>glassfish-embedded-all</artifactId>
@@ -90,7 +90,7 @@
             <version>3.1</version>
             <type>pom</type>
             <scope>compile</scope>
-        </dependency>
+        </dependency>-->
 
         <!-- Javaee-api -->
         <dependency>
